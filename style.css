@@ -259,8 +259,13 @@ input:checked + .slider:before {
   padding: 50px;
   padding-right: 0;
   display: flexbox;
-  justify-
+  flex-direction: column;
 }
+
+.card {
+  flex-grow: 1; 
+}
+
 .aaiffLaurel {
   height: 60px;
   filter: invert(100%);
