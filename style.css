@@ -72,6 +72,11 @@ nav {
   transition: none;
 }
 
+.wrapper a:hover {
+  color: #0040ad;
+  transition: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -175,6 +180,10 @@ body.dark-mode {
 }
 
 .nav-items.dark-mode a:hover {
+  transition: none;
+}
+
+.wrapper.dark-mode a:hover {
   color: #b8daff;
   transition: none;
 }
@@ -250,7 +259,7 @@ input:checked + .slider:before {
 }
 
 .mutedPoster {
-  height: 20rem;
+  width: 400px;
   margin: 0 auto;
 }
 
@@ -258,12 +267,25 @@ input:checked + .slider:before {
   grid-column: 2; /* Main content spans the second column */
   padding: 50px;
   padding-right: 0;
-  display: flexbox;
+  margin-top: 50px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  flex-grow: 1; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card.left {
+  padding-right: 30rem;
+}
+
+.card.right {
+  padding-left: 30rem;
 }
 
 .aaiffLaurel {
