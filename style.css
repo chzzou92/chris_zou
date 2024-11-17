@@ -40,7 +40,7 @@ body {
 
 header {
   text-align: center;
-  padding: 50px 0;
+  width: 100%;
   position: sticky;
 }
 
@@ -49,7 +49,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: -40px;
+  margin: 0 auto;
   top: 65px;
   position: sticky;
 }
@@ -73,7 +73,7 @@ nav {
 }
 
 .wrapper a:hover {
-  color: #0040ad;
+  color: #648acd;
   transition: none;
 }
 
@@ -92,11 +92,14 @@ a {
 }
 .videoContainer {
   margin-bottom: 15px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 500px; /* Set the width of the cropped area */
-  height: 450px; /* Set the height of the cropped area */
+  height: 80%; /* Set the height of the cropped area */
   overflow: hidden;
   position: relative;
+  margin-left: 10%;
 }
 .video {
   position: absolute;
@@ -106,35 +109,35 @@ a {
 }
 .header {
   grid-column: 1; /* Header spans the first column */
-  padding: 60px;
 }
 .portfolio {
   grid-column: 2; /* Main content spans the second column */
-  padding: 50px;
-  padding-right: 0;
+  margin-top: 20px;
 }
 
 .image-container {
   padding: 20px;
-  width: 20%; /* Adjust as needed */
+  width: 500px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .image-container img {
-  width: 100%; /* Ensures the image fills its container */
+  width: 200px; /* Ensures the image fills its container */
   height: auto; /* Maintains aspect ratio */
-  margin: 0px 700px 0px 15px;
 }
 
 .profileDescription {
   font-size: 15px;
   text-align: center;
   width: 300px;
-  margin: 0px 700px 0px 20px;
   font-weight: 300;
 }
 
 .bottom-line {
   border-bottom: 1px solid #ccc; /* 1px solid line, change color as needed */
-  width: 25%;
+  width: 100%;
   padding-bottom: 0px; /* Optional: Add padding to separate content from line */
   margin-right: 1000px;
 }
@@ -200,11 +203,10 @@ body.dark-mode {
 }
 
 #darkMode {
-  position: absolute;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin: 20px 0px 40px 0;
+  margin-bottom: 10px;
 }
 
 .darkButton {
