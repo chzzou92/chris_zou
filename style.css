@@ -267,9 +267,9 @@ input:checked + .slider:before {
 
 .mutedPictures {
   grid-column: 2; /* Main content spans the second column */
-  padding: 50px;
+
   padding-right: 0;
-  margin-top: 50px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,4 +308,164 @@ input:checked + .slider:before {
   display: flex;
   margin: 0 auto;
   align-items: center;
+}
+/* General Mobile Styles */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .image-container {
+    padding: 0px;
+    width: 400px;
+  }
+
+  /* Adjust container layout for single column */
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Allow scrolling on smaller screens */
+  }
+
+  .profileDescription {
+    font-size: 12px;
+    text-align: center;
+    max-width: 80%;
+    font-weight: 300;
+  }
+
+  /* Center and stack navigation items */
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card.left {
+    padding-right: 0rem;
+  }
+  .mutedPoster {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .nav-items a {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .LOGO a {
+    font-size: 36px; /* Increased size for better visibility */
+  }
+
+  /* Adjusting Dark Mode Toggle Button */
+  #darkMode {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align left */
+    margin: 0 0 10px 30px; /* Added left margin for spacing */
+  }
+
+  .darkButton {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    transform: scale(0.85); /* Adjusted scale slightly for better fit */
+  }
+
+  /* Video container adjustments */
+  .videoContainer {
+    width: 100%; /* Full width on mobile */
+    margin-left: 0;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  #videoTitle {
+    font-size: 14px;
+    width: auto;
+  }
+
+  /* Adjust social media icons */
+  #social-media {
+    width: auto;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #social-media a {
+    width: 24px; /* Resize icons for smaller screens */
+    height: 24px;
+  }
+
+  /* Profile description adjustments */
+  .profileDescription {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust contact section */
+  .contact {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  /* Flex direction for laurels */
+  .laurels {
+    flex-direction: column;
+  }
+
+  .tinffLaurel,
+  .aaiffLaurel {
+    height: 80px;
+  }
+}
+
+/* Ultra-small screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 5px;
+  }
+
+  .LOGO a {
+    font-size: 36px;
+  }
+
+  .nav-items a {
+    font-size: 14px;
+    margin: 1px 0;
+  }
+
+  /* Smaller video titles */
+  #videoTitle {
+    font-size: 12px;
+  }
+
+  /* Adjust social media icons further */
+  #social-media {
+    gap: 5px;
+  }
+
+  #social-media a {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Ensure proper spacing for text sections */
+  .profileDescription,
+  .contact {
+    font-size: 12px;
+  }
+
+  .darkButton {
+    transform: scale(0.7);
+  }
 }
