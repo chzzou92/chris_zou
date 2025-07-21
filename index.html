@@ -1,88 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="icon" href="/Muted/CZ.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris Zou</title>
-    <link rel="icon" href="Muted/CZ.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <nav>
-          <div class="LOGO">
-            <a href="index.html">Chris Zou</a>
-          </div>
-          <div class="nav-items">
-            <a href="bio.html">About</a>
-            <a href="press.html">Press</a>
-            <a href="contact.html">Contact</a>
-            <div id="social-media">
-              <a
-                href="https://www.instagram.com/chris_zou15/"
-                target="_blank"
-                class="svg-wrapper instagram"
-              >
-                <img src="instagram.svg" />
-              </a>
-              <a
-                href="https://www.imdb.com/name/nm7520916/"
-                target="_blank"
-                class="svg-wrapper imdb"
-              >
-                <img src="imdb-svgrepo-com.svg" />
-              </a>
-              <a
-                href="https://letterboxd.com/chzou/"
-                target="_blank"
-                class="svg-wrapper letterboxd"
-              >
-                <img src="letterboxd.svg" />
-              </a>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="portfolio">
-        <div id="darkMode">
-          <label class="darkButton">
-            <input type="checkbox" id="toggleDarkMode" />
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <div class="videoContainer">
-          <a
-            href="https://www.youtube.com/watch?v=gHQDSLDaC8I"
-            class="video-link"
-            target="_blank"
-          >
-            <video id="previewVideo" autoplay muted width="450">
-              <source src="muted_aaiff_trailer (1080p).mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p id="videoTitle">Muted (2024)</p>
-            <div class="overlay"></div>
-          </a>
-          <a
-            href="https://www.youtube.com/watch?v=A1boVpPcljE"
-            class="video-link"
-            target="_blank"
-          >
-            <video id="previewVideo" autoplay muted width="450">
-              <source src="videoplayback (1).mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p id="videoTitle">Score (2023)</p>
-            <div class="overlay"></div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
