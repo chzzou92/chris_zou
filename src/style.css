@@ -1,23 +1,23 @@
 @font-face {
   font-family: "Helvetica";
-  src: url("HelveticaNeueMedium.otf");
+  src: url("/fonts/HelveticaNeueMedium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url("HelveticaNeueHeavy.otf");
+  src: url("/fonts/HelveticaNeueHeavy.otf") format("opentype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url("HelveticaNeueLight.otf");
+  src: url("/fonts/HelveticaNeueLight.otf") format("opentype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url("HelveticaNeueRoman.otf");
+  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
   font-weight: 300;
 }
 
