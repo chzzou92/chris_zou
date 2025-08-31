@@ -85,9 +85,10 @@ const Bio = () => {
               </span>
             </p>
             <p>
-              Chris is in post-production of a short film, "Walk on Water",
+              His newest short film "Walk on Water",
               starring <span className="font2">Sam Li</span> and
-              <span className="font2"> Ray Kam.</span>
+              <span className="font2"> Ray Kam,</span> premiered at the <span className="font2">2025 Asian American International Film Festival.
+              </span>
             </p>
             <div className="bottom-line"></div>
             <p className="contact">contact: <b>chzzou92@gmail.com</b></p>
