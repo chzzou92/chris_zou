@@ -42,12 +42,12 @@ const Bio = () => {
                 <img src="/imdb-svgrepo-com.svg" alt="IMDB" />
               </a>
               <a
-                href="https://letterboxd.com/chzou/"
+                href="https://vimeo.com/basskeys"
                 target="_blank"
-                className="svg-wrapper letterboxd"
+                className="svg-wrapper vimeo"
                 rel="noopener noreferrer"
               >
-                <img src="/letterboxd.svg" alt="Letterboxd" />
+                <img src="/vimeo.svg" alt="Letterboxd" />
               </a>
             </div>
           </div>

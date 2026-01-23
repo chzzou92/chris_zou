@@ -292,8 +292,9 @@ input:checked + .slider:before {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 3%;
 }
 
 .card {
@@ -303,7 +304,7 @@ input:checked + .slider:before {
 }
 
 .card.left {
-  padding-right: 30rem;
+  padding-right: 0;
 }
 
 .card.right {

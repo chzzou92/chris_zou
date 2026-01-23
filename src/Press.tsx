@@ -14,9 +14,9 @@ const Press = () => {
   }, [darkMode]);
 
   return (
-    <div className="container">
+    <div className="container" style={{ minHeight: '100vh' }}>
       <header className="header">
-        <nav>
+        <nav style={{ zIndex: 100, top: 0 }}>
           <div className="LOGO">
             <Link to="/">Chris Zou</Link>
           </div>
@@ -42,12 +42,12 @@ const Press = () => {
                 <img src="/imdb-svgrepo-com.svg" alt="IMDB" />
               </a>
               <a
-                href="https://letterboxd.com/chzou/"
+                href="https://vimeo.com/basskeys"
                 target="_blank"
-                className="svg-wrapper letterboxd"
+                className="svg-wrapper vimeo"
                 rel="noopener noreferrer"
               >
-                <img src="/letterboxd.svg" alt="Letterboxd" />
+                <img src="/vimeo.svg" alt="Letterboxd" />
               </a>
             </div>
           </div>
