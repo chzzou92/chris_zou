@@ -135,12 +135,12 @@ const Index = () => {
             rel="noopener noreferrer"
             style={{ display: 'block' }}
           >
-            <div className="iframe-wrapper" style={{ width: 450, height: 253, borderRadius: 0, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div className="iframe-wrapper" style={{ width: 350, height: 197, borderRadius: 0, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <iframe
                 ref={walkOnWaterIframeRef}
                 id="walkOnWaterVideo"
-                width="450"
-                height="253"
+                width="350"
+                height="197"
                 src="https://www.youtube.com/embed/sBhGiZyZSKA?enablejsapi=1&start=0&autoplay=1&mute=1&controls=1"
                 title="Walk on Water (2025)"
                 frameBorder="0"
@@ -150,7 +150,7 @@ const Index = () => {
               ></iframe>
               <div className="iframe-overlay"></div>
             </div>
-            <p id="videoTitle" style={{ textAlign: 'center', width: 450, margin: '12px auto 0 auto', display: 'block' }}>Walk on Water (2025)</p>
+            <p id="videoTitle" style={{ textAlign: 'center', width: 350, margin: '8px auto 0 auto', display: 'block' }}>Walk on Water (2025)</p>
             <div className="overlay"></div>
           </a>
           {/* Muted (2024) */}
@@ -161,7 +161,7 @@ const Index = () => {
             rel="noopener noreferrer"
           >
             <div className="video-wrapper">
-              <video ref={video1Ref} id="previewVideo1" autoPlay muted width={450}>
+              <video ref={video1Ref} id="previewVideo1" autoPlay muted width={350}>
                 <source src="/muted_aaiff_trailer (1080p).mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -178,7 +178,7 @@ const Index = () => {
             rel="noopener noreferrer"
           >
             <div className="video-wrapper">
-              <video ref={video2Ref} id="previewVideo2" autoPlay muted width={450}>
+              <video ref={video2Ref} id="previewVideo2" autoPlay muted width={350}>
                 <source src="/videoplayback (1).mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

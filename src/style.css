@@ -49,8 +49,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 35px auto;
-  top: 15px;
+  margin: 0 auto;
   position: relative;
   background: #f0f0f0;
   transition: background 0.5s;
@@ -95,7 +94,7 @@ a {
 }
 .container {
   display: grid;
-  grid-template-columns: 20% 80%; /* Left third for header, rest for main */
+  grid-template-columns: 10% 90%; /* Left third for header, rest for main */
   /* height: 100vh;  Removed to allow natural page scrolling */
   
 }
@@ -103,17 +102,18 @@ a {
   font-size: 15px;
   width: 100%;
   text-align: center;
-  margin: 12px auto 0 auto;
+  margin: 8px auto 0 auto;
   display: block;
 }
 .videoContainer {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   width: 500px; /* Set the width of the cropped area */
   position: relative;
-  margin-left: 10%;
+  margin-left: 3%;
+  padding-top: 0; /* No padding at top to align with LOGO */
 }
 .video {
   position: absolute;
@@ -123,10 +123,14 @@ a {
 }
 .header {
   grid-column: 1; /* Header spans the first column */
+  display: flex;
+  align-items: flex-start;
+  padding-top: 5px; /* Aligns with portfolio top */
 }
 .portfolio {
   grid-column: 2; /* Main content spans the second column */
-  margin-top: 20px;
+  margin-top: 5px; /* Aligned with header LOGO top */
+  position: relative;
 }
 
 .image-container {
@@ -180,6 +184,7 @@ a {
 
 .LOGO a {
   font-size: 30px;
+  white-space: nowrap;
 }
 
 .font2 {
@@ -218,10 +223,10 @@ body.dark-mode {
 }
 
 #darkMode {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  z-index: 10;
 }
 
 .darkButton {
@@ -441,7 +446,7 @@ input:checked + .slider:before {
   }
   .video-wrapper, .iframe-wrapper {
     width: 95vw !important;
-    max-width: 450px;
+    max-width: 350px;
     margin: 0 auto;
     border-radius: 18px;
   }
@@ -528,13 +533,13 @@ input:checked + .slider:before {
 }
 .video-link {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 35px;
 }
 .video-link:last-child {
   margin-bottom: 0;
 }
 .first-video-link {
-  margin-bottom: 70px;
+  margin-bottom: 35px;
 }
 .iframe-overlay {
   position: absolute;
@@ -569,7 +574,7 @@ input:checked + .slider:before {
 
 .video-wrapper {
   position: relative;
-  width: 450px;
+  width: 350px;
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;
