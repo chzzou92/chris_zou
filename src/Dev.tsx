@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 
-const Contact = () => {
+const Dev = () => {
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
   const navItemsRef = useRef<HTMLDivElement>(null);
 
@@ -14,16 +14,16 @@ const Contact = () => {
   }, [darkMode]);
 
   return (
-    <div className="container">
+    <div className="container" style={{ minHeight: '100vh' }}>
       <header className="header">
-        <nav>
+        <nav style={{ zIndex: 100, top: 0 }}>
           <div className="LOGO">
             <Link to="/">Chris Zou</Link>
           </div>
           <div className="nav-items" ref={navItemsRef}>
             <Link to="/bio">About</Link>
+            <Link to="/dev">Dev</Link>
             <Link to="/press">Press</Link>
-            <Link to="/contact">Contact</Link>
             <div id="social-media">
               <a
                 href="https://www.instagram.com/chris_zou15/"
@@ -64,10 +64,28 @@ const Contact = () => {
             <span className="slider round"></span>
           </label>
         </div>
-        <p className="contact">contact: <b>chzzou92@gmail.com</b></p>
+        <div className="dev-gallery">
+          <div className="dev-img-container">
+            <img
+              src={darkMode ? "/dev-dark-1.png" : "/dev-light-1.png"}
+              alt="App Screenshot 1"
+            />
+          </div>
+          <div className="dev-img-container">
+            <img
+              src={darkMode ? "/dev-dark-2.png" : "/dev-light-2.png"}
+              alt="App Screenshot 2"
+            />
+          </div>
+        </div>
+        <div className="dev-link">
+          <a href="https://fountainhead.site" target="_blank" rel="noopener noreferrer">
+            Fountainhead.site
+          </a>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Contact; 
+export default Dev;

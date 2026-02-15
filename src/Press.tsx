@@ -22,8 +22,8 @@ const Press = () => {
           </div>
           <div className="nav-items" ref={navItemsRef}>
             <Link to="/bio">About</Link>
+            <Link to="/dev">Dev</Link>
             <Link to="/press">Press</Link>
-            <Link to="/contact">Contact</Link>
             <div id="social-media">
               <a
                 href="https://www.instagram.com/chris_zou15/"

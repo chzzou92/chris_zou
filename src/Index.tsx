@@ -81,8 +81,8 @@ const Index = () => {
           </div>
           <div className="nav-items" ref={navItemsRef}>
             <Link to="/bio">About</Link>
+            <Link to="/dev">Dev</Link>
             <Link to="/press">Press</Link>
-            <Link to="/contact">Contact</Link>
             <div id="social-media">
               <a
                 href="https://www.instagram.com/chris_zou15/"
@@ -129,7 +129,7 @@ const Index = () => {
         >
           {/* Walk on Water (2025) - YouTube Embed */}
           <a
-            href="https://walkonwater.vercel.app/"
+            href="https://vimeo.com/1165088007/fdaccf1740?share=copy&fl=sv&fe=ci"
             className="video-link first-video-link"
             target="_blank"
             rel="noopener noreferrer"

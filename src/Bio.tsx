@@ -22,8 +22,8 @@ const Bio = () => {
           </div>
           <div className="nav-items" ref={navItemsRef}>
             <Link to="/bio">About</Link>
+            <Link to="/dev">Dev</Link>
             <Link to="/press">Press</Link>
-            <Link to="/contact">Contact</Link>
             <div id="social-media">
               <a
                 href="https://www.instagram.com/chris_zou15/"
@@ -71,7 +71,7 @@ const Bio = () => {
             alt="Profile Picture"
           />
           <div className="profileDescription">
-            <p>Chris Zou is a filmmaker based in New Jersey.</p>
+            <p>Chris Zou is a filmmaker and developer based in New Jersey.</p>
             <p>
               His work has been featured at the 
               <span className="font2"> Liu Shiming Art Foundation</span> and the AMP

@@ -287,14 +287,12 @@ input:checked + .slider:before {
 
 .mutedPictures {
   grid-column: 2; /* Main content spans the second column */
-
-  padding-right: 0;
-
+  padding: 20px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 3%;
 }
 
 .card {
@@ -403,6 +401,18 @@ input:checked + .slider:before {
   .nav-items a:last-child {
     display: none !important;
   }
+  body.dark-mode .header {
+    background: #121212;
+  }
+  body.dark-mode nav {
+    background: #121212;
+  }
+  body.dark-mode .LOGO a {
+    color: #e0e0e0;
+  }
+  body.dark-mode .nav-items a {
+    color: #85c0ff;
+  }
   #darkMode {
     display: none !important;
   }
@@ -461,9 +471,6 @@ input:checked + .slider:before {
     margin: 12px auto 0 auto;
     text-align: center;
   }
-  .nav-items a[href*="contact"] {
-    display: none !important;
-  }
   .mutedPictures {
     display: flex;
     flex-direction: column;
@@ -502,6 +509,22 @@ input:checked + .slider:before {
   }
   .wrapper a {
     margin-bottom: 8px;
+  }
+  .dev-gallery {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 16px;
+    width: 100vw;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .dev-img-container {
+    max-width: 340px;
+    width: 95vw;
+  }
+  .dev-link {
+    margin-left: 0;
   }
 }
 
@@ -595,4 +618,47 @@ input:checked + .slider:before {
 }
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+}
+
+/* Dev page gallery */
+.dev-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 3%;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+.dev-img-container {
+  flex: 1;
+  max-width: 420px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+}
+.dev-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.dev-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 3%;
+  max-width: 860px; /* matches 2 x 420px + 20px gap */
+}
+.dev-link a {
+  font-size: 15px;
+  color: #0040ad;
+}
+.dev-link a:hover {
+  color: rgb(41, 38, 82);
+}
+body.dark-mode .dev-link a {
+  color: #85c0ff;
+}
+body.dark-mode .dev-link a:hover {
+  color: #b8daff;
 }
