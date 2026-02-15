@@ -87,8 +87,8 @@ const Bio = () => {
             <p>
               His newest short film "Walk on Water",
               starring <span className="font2">Sam Li</span> and
-              <span className="font2"> Ray Kam,</span> premiered at the <span className="font2">2025 Asian American International Film Festival.
-              </span>
+              <span className="font2"> Ray Kam,</span> premiered at the <span className="font2">2025 Asian American International Film Festival
+              </span> and selected at the <span className="font2">2026 National Film Festival for Talented Youth</span>
             </p>
             <div className="bottom-line"></div>
             <p className="contact">contact: <b>chzzou92@gmail.com</b></p>
